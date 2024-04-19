@@ -1,0 +1,27 @@
+name: Hello world workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  # workflow_dispatch creates a button in the UI which lets you run the workflow manually without pushing
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      # a github created action but you can find many others online - templates that carry out specific tasks
+      - uses: actions/checkout@v2
+      - name: hellow world
+        run: echo "hello world"
+        shell: bash
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: goodbye world
+        run: echo "goodbye world"
+        shell: bash
