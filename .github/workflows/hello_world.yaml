@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # a github created action but you can find many others online - templates that carry out specific tasks
+      # checkout basically clones the repo to give the runner/agent access to the repo
       - uses: actions/checkout@v2
       - name: hellow world
         run: echo "hello world"
