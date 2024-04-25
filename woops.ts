@@ -1,1 +1,0 @@
-const MOCK_API_KEY = 'xoxp-1234567890-123456789012-123456789012-abcdefghijklmno'
