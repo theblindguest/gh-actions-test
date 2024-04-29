@@ -4,4 +4,4 @@ const lo = 'lo'
 
 const three = 3
 
-const three = 4
+const four = 4
